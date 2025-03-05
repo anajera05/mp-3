@@ -1,11 +1,11 @@
 import Header from "./Header.tsx"
 import Navigation from "./Navigation.tsx"
 import Homepage from "./Main/Homepage.tsx"
-import Education from "./Main/Education.tsx"
-import Experience from "./Main/Experience.tsx"
+import Education from "./Main/Education/Education.tsx"
+import Experience from "./Main/Experience/Experience.tsx"
 import Projects from "./Main/Projects/Projects.tsx"
 import Clubs from "./Main/Clubs/Clubs.tsx"
-import Contact from "./Main/Contact.tsx"
+import Contacts from "./Main/Contacts/Contacts.tsx"
 import Footer from "./Footer.tsx"
 import styled from "styled-components";
 import { createBrowserRouter, Route, RouterProvider, Routes} from "react-router";
@@ -60,7 +60,7 @@ function Root(){
                         <Route path="/experience" element={<Experience/>}/>
                         <Route path="/projects" element={<Projects/>}/>
                         <Route path="/clubs" element={<Clubs/>}/>
-                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/contact" element={<Contacts/>}/>
                     </Routes>
                 </StyledMain>
             </StyledContainer>
