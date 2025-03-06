@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export default function Footer(){
     const StyledFooter = styled.footer`
@@ -13,12 +14,12 @@ export default function Footer(){
             font-size: calc(3px + 2vw);
         }
     `
-    const StyledLink = styled.a`
+    const StyledLink = styled(Link)`
         color: #0B3364;
     `
     return(
     <StyledFooter>
-        <p>All rights reserved by Alyssa Najera: <StyledLink href="">Credits</StyledLink> &#169;</p>
+        <p>All rights reserved by Alyssa Najera: <StyledLink to="">Credits</StyledLink> &#169;</p>
     </StyledFooter>
     )
 }
