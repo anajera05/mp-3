@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledContact = styled.div`
     padding-bottom: 10%;
@@ -22,7 +23,7 @@ const ContactName = styled.h4`
         font-size: calc(3px + 3vw);
     }
 `
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
     text-decoration: none;
     &:link {
         color: #D9D9D9;
@@ -36,7 +37,7 @@ export default function Contacts(props: {title: string, link: string, user: stri
     return (
         <StyledContact>
             <StyledTitle>{props.title}</StyledTitle>
-            <ContactName><StyledLink href={props.link} target="_blank">{props.user}</StyledLink></ContactName>
+            <ContactName><StyledLink to={props.link} target="_blank">{props.user}</StyledLink></ContactName>
         </StyledContact>
 
     )
