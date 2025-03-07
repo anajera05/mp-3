@@ -39,7 +39,7 @@ const StyledMain = styled.div`
     width:70%;
     background-color: #0B3364;
     padding: 1vh 2vw;
-    height: 100vh;
+    height: 100%;
     @media screen and (max-width: 750px) {
         width:100%;
         min-height: 90%;
